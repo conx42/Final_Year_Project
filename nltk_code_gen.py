@@ -69,3 +69,14 @@ for i in range(1,len(Condition)-1):
         print(c_operators[2]," ", end="")
     else:
         print(Condition[i]," ", end="")
+
+def Access_CStatements():
+    print("For beautifully printing of Conditional Statements!!!")
+def Access_CRanges():
+    print("For beautifully printing of Conditional Statements!!!")
+def Access_CInternalTestCases():
+    print("For beautifully printing of Conditional Statements!!!")
+def Access_CPossibleTestCases():
+    print("For beautifully printing of Conditional Statements!!!")
+
+print("\n\n/******************end-of-Program*******************/")
