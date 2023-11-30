@@ -1,0 +1,5 @@
+/**
+ * Inner ---> x,y,k,l,p,z,a
+ * outer ---> i,j,q
+ * 
+*/

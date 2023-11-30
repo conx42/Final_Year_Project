@@ -15,10 +15,27 @@ int main(){
             }
         }
     }
-
-    if (x>y)
-    {
+    else{
         exit(0);
     }
-    
+
+    if(j>0){
+        if(k>100){
+            if(l>1){
+                printf("Taking Nested Loop!");
+            }
+        }
+    }
+
+    if(w>0){
+        printf("Test");
+        if(p>0){
+            printf("Test");
+            if(z<0){
+                if(a>10){
+                    exit(0);
+                }
+            }
+        }
+    }
 }
