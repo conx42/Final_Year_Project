@@ -15,38 +15,10 @@ int main(){
             }
         }
     }
-    else{
+
+    if (x>y)
+    {
         exit(0);
     }
-
-    if(j>0){
-        if(k>100){
-            if(l>1){
-                printf("Taking Nested Loop!");
-            }
-        }
-    }
-    printf("opk");
-    if(w==0){
-        printf("Test");
-        printf("Test");
-        printf("Test");
-        printf("Test");
-        a+=1;
-        p-=0;
-        if(p>0){
-            printf("Test");
-            if(z<0){
-                if(a>10){
-                    exit(0);
-                }
-            }
-        }
-    }
+    
 }
-
-/**
- * Inner ---> x,y,k,l,p,z,a
- * outer ---> i,j,w
- * 
-*/

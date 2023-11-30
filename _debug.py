@@ -60,9 +60,9 @@ def outer_inner_condition_curlyBraces(token,i):
         return 'outer'
     elif track_curly_brackets_for_inner_nd_outer_if_conditions > 1:
         return 'inner'
-    else:
-        print('track_curly_brackets_for_inner_nd_outer_if_conditions= ',track_curly_brackets_for_inner_nd_outer_if_conditions)
-        print('So, Program ends')
+    # else:
+    #     print('track_curly_brackets_for_inner_nd_outer_if_conditions= ',track_curly_brackets_for_inner_nd_outer_if_conditions)
+    #     print('So, Program ends')
 
 # outer-IF_er-Vitor_total_innerConditions or also khonw as(aka) gass
 global gas
@@ -96,6 +96,12 @@ for i in range(0,n):
 
 print("\nnested_conditional_statements: ",nested_conditional_statements,"\n")
 print("\nouter_conditional_statements: ", outer_conditional_statements,"\n")
+
+def Access_ConditionalStatements_Beautify():
+    for i in range(0,n):
+        print(tokens[i])
+
+
 
 '''            
 print('Conditional statements Identified: \n\n\t', Condition)
