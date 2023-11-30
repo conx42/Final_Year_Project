@@ -67,8 +67,6 @@ def outer_inner_condition_curlyBraces(token,i):
 # outer-IF_er-Vitor_total_innerConditions or also khonw as(aka) gass
 global gas
 gas=0
-global preVgas
-preVgas=0
 
 # Detect outer and Inner if together
 for i in range(0,n):
@@ -76,6 +74,7 @@ for i in range(0,n):
     # for outer if
     if tokens[i] == 'if' and take_condition=='outer':
         # add this 'if' condition to outer if
+        gas+=1
         outer_conditional_statements[gas]=[]
         for j in range(i+1,n):
             if eval_cond(tokens[j], 1)== False:
@@ -86,13 +85,6 @@ for i in range(0,n):
 #                 print(eval_cond(tokens[j]))
                 break
     elif tokens[i]=='if' and take_condition=='inner':
-        preVgas=gas
-        gas+=1
-        if preVgas != gas:
-            outer_conditional_statements[gas] = outer_conditional_statements[preVgas]
-            del outer_conditional_statements[preVgas]
-        else:
-            raise Exception("Have to SEEEEEEEEEEEEEEEEEEEEE 1098 IEEE")
         for j in range(i+1,n):
             if eval_cond(tokens[j], 1)== False:
                 nested_conditional_statements.append(tokens[j])
@@ -102,8 +94,8 @@ for i in range(0,n):
 #                 print(eval_cond(tokens[j]))
                 break
 
-print(nested_conditional_statements)
-print(outer_conditional_statements)
+print("\nnested_conditional_statements: ",nested_conditional_statements,"\n")
+print("\nouter_conditional_statements: ", outer_conditional_statements,"\n")
 
 '''            
 print('Conditional statements Identified: \n\n\t', Condition)

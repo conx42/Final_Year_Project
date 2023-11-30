@@ -1,4 +1,1 @@
-global CondCounter
-    if(count==1 and x=='('):
-        CondCounter=0
-        count+=1
+rack_curly_brackets_for_inner_nd_outer_i

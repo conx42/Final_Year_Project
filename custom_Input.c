@@ -5,8 +5,15 @@ int main(){
     int j=9;
     int k=100;
     int l=-102;
+    int x=99;
+    int y=11, w=0,p=78,z=1,a=0;
     if(i>0){
         printf("Test Cases!");
+        if(x>99){
+            if(y<100){
+                printf("print");
+            }
+        }
     }
     else{
         exit(0);
@@ -19,4 +26,27 @@ int main(){
             }
         }
     }
+    printf("opk");
+    if(w==0){
+        printf("Test");
+        printf("Test");
+        printf("Test");
+        printf("Test");
+        a+=1;
+        p-=0;
+        if(p>0){
+            printf("Test");
+            if(z<0){
+                if(a>10){
+                    exit(0);
+                }
+            }
+        }
+    }
 }
+
+/**
+ * Inner ---> x,y,k,l,p,z,a
+ * outer ---> i,j,w
+ * 
+*/
